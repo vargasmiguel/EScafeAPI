@@ -35,4 +35,5 @@ The data is obtained from official site of Centro do Comércio de Café de Vitó
 
 This API was develepoed by MAVV - Smart Optimization Consulting.
 webpage: [mavvsmart.com](https://mavvsmart.com/)
+
 ![](https://mavvsmart.com/wp-content/uploads/2021/11/logo_black2-300x100.png)
