@@ -1,7 +1,7 @@
 # EScafeAPI
 
 ## About
-This is a simple API to get coffe prices in Vitoria - Espirito Santo, Brazil. It was develeped in Pytohn with FastAPI and deployed in Heroku.
+This is a simple API to get daily coffee prices in Vitoria - Espirito Santo, Brazil. It was develeped in Pytohn with FastAPI and deployed in Heroku.
 
 EScafeAPI is a project of MAVV for the  Android app [Preço Café](https://play.google.com/store/apps/details?id=com.bortole.precocafe) by Magdo Bartole. 
 
