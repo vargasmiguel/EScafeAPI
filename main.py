@@ -21,7 +21,7 @@ def prices(day: str):
     data = bs.findAll(lambda tag: tag.name=='p')
     data=[x.text for x in data]
     daytxt= bs.findAll(lambda tag: tag.name=='h1')[2].text.split(' ')[0]
-    if len(data)<7 or daytxt!=day3:
+    if len(data)<7 or daytxt!=day3.split('/')[0]:
         return {'error': 'No data for this day'}
     else:
         return {'arabica-dura':data[2], 'arabica-rio':data[4], 'conilon':data[7]}
