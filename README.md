@@ -91,12 +91,7 @@ The data is obtained from official site of Centro do Comércio de Café de Vitó
 EScafeAPI was develepoed by MAVV - Smart Optimization Consulting.
 webpage: [mavvsmart.com](https://mavvsmart.com/)
 
-[![alt text][image]][hyperlink]
-[hyperlink]: https://mavvsmart.com/
-[image]:
-https://mavvsmart.com/wp-content/uploads/2021/11/logo_black2-300x100.png
 
-
-![](https://mavvsmart.com/wp-content/uploads/2021/11/logo_black2-300x100.png)
+![https://mavvsmart.com/](https://mavvsmart.com/wp-content/uploads/2021/11/logo_black2-300x100.png)
 
 
