@@ -35,6 +35,7 @@ def month():
     bs = BeautifulSoup(content)
     data = bs.findAll(lambda tag: tag.name=='td')
     data=[x.text for x in data]
+    data2=data[7:-1]
     resp={}
     for i in range(0, len(data2), 4):
         resp[data2[i]] = {'arabica-dura':data2[i+1], 'arabica-rio':data2[i+2], 'conilon':data2[i+3]}
