@@ -76,7 +76,10 @@ The response is the following JSON:
 "Média Mensal":{"arabica-dura":"1.253,68","arabica-rio":"1.172,84","conilon":"770,53"}
 }
 ```
-This JSON shows prices of same three types of coffee per day. Prices are presented in simple strings currency format: `1.200,00` to be easily presented in tables. Prices not reported in the source will be displayed as `'-'`.
+This JSON shows prices of same three types of coffee of all days in the current month. Prices are presented in simple strings currency format: `1.200,00` to be easily presented in tables. Prices not reported in the source will be displayed as `"-"`.
+
+Each element in the JSON has prices of each day `"DD":{"arabica-dura":"1.308,00","arabica-rio":"1.227,00","conilon":"780,00"}`. 
+The last entry is the monthly average `"Média Mensal":{"arabica-dura":"1.253,68","arabica-rio":"1.172,84","conilon":"770,53"}`.
 
 ## Data source
 
