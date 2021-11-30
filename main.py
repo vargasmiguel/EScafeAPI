@@ -26,7 +26,7 @@ def prices(day: str):
     else:
         return {'arabica-dura':data[2], 'arabica-rio':data[4], 'conilon':data[7]}
     
-@app.get("/month")
+@app.get("/")
 def month():
     req = urllib.request.Request(f'https://www.cccv.org.br/cotacao/', headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'})
     page = urllib.request.urlopen(req)
