@@ -34,7 +34,7 @@ def prices(day: str):
     if len(data)<8 or daytxt!=(str(int(day2[0])).zfill(2)):
         return {'error': 'No data for this day'}
     else:
-        return {'arabica-dura-2022/2023':data[2], 'arabica-rio-2022/2023':data[4], 'conilon-2022/2023':data[7]}
+        return {'arabica-dura':data[2], 'arabica-rio':data[4], 'conilon':data[7]}
     
 @app.get("/month/")
 def month():
