@@ -31,11 +31,10 @@ def prices(day: str):
     data = bs.findAll(lambda tag: tag.name=='p')
     data=[x.text for x in data]
     daytxt= bs.findAll(lambda tag: tag.name=='h1')[2].text.split(' ')[0]
-    if len(data)<13 or daytxt!=(str(int(day2[0])).zfill(2)):
+    if len(data)<8 or daytxt!=(str(int(day2[0])).zfill(2)):
         return {'error': 'No data for this day'}
     else:
-        return {'arabica-dura-2021/2022':data[3], 'arabica-dura-2022/2023':data[4], 'arabica-rio-2021/2022':data[6], 'arabica-rio-2022/2023':data[7], 'conilon-2021/2022':data[11], 'conilon-2022/2023':data[12]}    
-
+        return {'arabica-dura-2022/2023':data[2], 'arabica-rio-2022/2023':data[4], 'conilon-2022/2023':data[7]}
     
 @app.get("/month/")
 def month():
@@ -46,8 +45,8 @@ def month():
     bs = BeautifulSoup(content)
     data = bs.findAll(lambda tag: tag.name=='td')
     data=[x.text for x in data]
-    data2=data[12:-1]
+    data2=data[7:-1]
     resp={}
-    for i in range(0, len(data2), 7):
-        resp[data2[i]] = {'arabica-dura-2021/2022':data2[i+1], 'arabica-rio-2021/2022':data2[i+2], 'arabica-dura-2022/2023':data2[i+3], 'arabica-rio-2022/2023':data2[i+4], 'conilon-2021/2022':data2[i+5], 'conilon-2022/2023':data2[i+6]}
+    for i in range(0, len(data2), 4):
+        resp[data2[i]] = {'arabica-dura':data2[i+1], 'arabica-rio':data2[i+2], 'conilon':data2[i+3]}
     return resp
