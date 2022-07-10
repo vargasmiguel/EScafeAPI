@@ -13,12 +13,12 @@ You can request coffe's prices of a specific day by adding the date in format `D
 
 Example
 ```
-https://escafeapi.herokuapp.com/10-11-2021
+https://escafeapi.herokuapp.com/08-07-2022
 ```
 
 The response is the following JSON:
 ```
-{"arabica-dura":"R$ 1.208,00","arabica-rio":"R$ 1.136,00","conilon":"R$ 765,00"}
+{"arabica-dura-2022/2023":"R$ 1.265,00","arabica-rio-2022/2023":"R$ 1.102,00","conilon-2022/2023":"R$ 685,00"}
 ```
 
 This JSON shows prices of three types of coffee:
